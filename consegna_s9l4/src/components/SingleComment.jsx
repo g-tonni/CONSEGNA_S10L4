@@ -26,7 +26,10 @@ const SingleComment = function ({ commentId, comment, rate }) {
   }
 
   return (
-    <div className="d-flex align-items-center border border-1 border-terziary justify-content-between p-2 rounded-2 mb-1">
+    <div
+      className="d-flex align-items-center border border-1 border-terziary justify-content-between p-2 rounded-2 mb-1"
+      data-testid="comment-list"
+    >
       <div className="me-2">
         {comment} | {rate}/5
       </div>

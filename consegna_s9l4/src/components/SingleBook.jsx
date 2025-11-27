@@ -12,6 +12,7 @@ const SingleBook = function ({
   return (
     <Col xs={12} sm={6} xl={3}>
       <Card
+        data-testid="single-book"
         onClick={() => {
           // console.log(this.props.asin)
           selectedBook(asin)
